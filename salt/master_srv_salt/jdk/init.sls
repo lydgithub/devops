@@ -27,6 +27,7 @@ jdk-effect:
   cmd.run:
     - name: 'source /etc/bashrc'
 
+#reload PATH
 {% set git_dir = pillar['jdk']['homepath'] ~ '/' ~ pillar['jdk']['name'] %}
 {% set env_path = salt['environ.get']('PATH') %}
 {% set env_path = env_path ~ ':' ~ git_dir ~ '/bin' %}
