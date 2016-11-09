@@ -1,4 +1,7 @@
 
+master_srv_salt -> salt_master:/srv/salt/
+master_srv_pillar -> salt_master:/srv/pillar/
+
 
 # to make the tar.gz'name same with the jdk name in jdk/init.sls
 [root@kvm-005770 files]# pwd
